@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verificação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificando números</h1>
+    </header>
+    <main>
+        <div>
+            <label for="inum">Número:</label>
+            <input type="number" name="num" id="inum">
+            <input type="submit" value="Adicionar" onclick="adicionar()">
+        </div>
+        <div id="resposta">
+            <p id="numeros">Números escolhidos:</p>
+            <input type="submit" value="Verificar" id="botao" onclick="verificar()">
+            <p id="resultados"></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;Direitos</p>
+    </footer>
+    <table>
+        <caption>Classificaçao Taça Guanabara</caption>
+       <thead>
+        <th scope="col">Time</th>
+        <th>P</th>
+        <th>J</th>
+        <th>V</th>
+        <th>E</th>
+        <th>D</th>
+        <th>GP</th>
+        <th>GC</th>
+        <th>SG</th>
+        <th>%</th>
+       </thead>
+       <tbody>
+        <tr>
+        <td>Fluminense</td>
+        <td>25</td>
+        <td>11</td>
+        <td>8</td>
+        <td>1</td>
+        <td>2</td>
+        <td>20</td>
+        <td>4</td>
+        <td>16</td>
+        <td>75</td>
+        </tr>
+        <tr>
+            <td>Vasco</td>
+            <td>23</td>
+            <td>11</td>
+            <td>7</td>
+            <td>2</td>
+            <td>2</td>
+            <td>20</td>
+            <td>6</td>
+            <td>13</td>
+            <td>69</td>
+        </tr>
+        <tr>
+            <td>Flamengo</td>
+            <td>23</td>
+            <td>11</td>
+            <td>7</td>
+            <td>2</td>
+            <td>2</td>
+            <td>19</td>
+            <td>6</td>
+            <td>13</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>Volta Redonda</td>
+            <td>20</td>
+            <td>11</td>
+            <td>6</td>
+            <td>2</td>
+            <td>3</td>
+            <td>27</td>
+            <td>15</td>
+            <td>12</td>
+            <td>60</td>
+        </tr>
+       </tbody>
+       <tfoot>
+        <tr id="espaco">
+            <td colspan="10"></td>
+        </tr>
+        <tr> 
+            <th id="foot" colspan="10">Campeão Fluminense</th>
+        </tr>
+       </tfoot>
+        
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
